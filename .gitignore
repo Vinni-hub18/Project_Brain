@@ -1,0 +1,5 @@
+dataset/
+venv/
+__pycache__/
+*.h5
+BraTS2020_TrainingData/
