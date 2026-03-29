@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brain Tumor Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Brain Tumor Detection</h1>
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+    <input type="file" name="image" required>
+    <button type="submit">Predict</button>
+</form>
+
+{% if image_url %}
+    <h3>Uploaded Image:</h3>
+    <img src="{{ image_url }}" width="250">
+{% endif %}
+
+{% if result %}
+    <h2>Result: {{ result }}</h2>
+{% endif %}
+
+</body>
+</html>
