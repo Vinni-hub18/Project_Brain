@@ -1,0 +1,40 @@
+# Virtual environments
+.venv/
+.venv312/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+
+# Django
+db.sqlite3
+media/
+
+# React
+node_modules/
+dist/
+build/
+
+# Dataset
+DATA/
+data/
+RAW/
+processed/
+splits/
+
+# Model files
+*.h5
+*.pt
+*.pth
+*.ckpt
+
+# Environment files
+.env
+
+# IDE
+.vscode/
+.idea/
+
+backend/config/settings.py
